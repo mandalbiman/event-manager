@@ -1,0 +1,13 @@
+navbar {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.logo {
+    background-color: aqua;
+}
+.links {
+    display: flex;
+    gap: 15px;
+}
