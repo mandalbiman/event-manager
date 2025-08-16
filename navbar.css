@@ -1,13 +1,17 @@
 navbar {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     margin: 20px;
+    
 }
-.logo {
+/* .logo {
     background-color: aqua;
-}
+} */
 .links {
     display: flex;
-    gap: 15px;
+    gap: 25px;
+}
+.class {
+    font-size: 50px;
 }
