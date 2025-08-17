@@ -2,11 +2,15 @@
       font-family: "Inter", sans-serif;
 
 }
+body {
+    margin: 0 10px;
+}
 navbar {
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
-    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     
 }
 .logo {
