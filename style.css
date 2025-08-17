@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+
+}
+
+.hero-action{
+    h1{
+        text-align: center;
+        font-size: 100px;
+    }
+}
