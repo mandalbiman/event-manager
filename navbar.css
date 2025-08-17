@@ -2,16 +2,18 @@ navbar {
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 25px;
     
 }
-/* .logo {
-    background-color: aqua;
-} */
+.logo {
+    font-size: 20px;
+}
 .links {
     display: flex;
     gap: 25px;
+    font-size: 20px;
+    
 }
-.class {
-    font-size: 50px;
+.button {
+    font-size: 20px;
 }
