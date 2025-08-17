@@ -1,3 +1,7 @@
+*{
+      font-family: "Inter", sans-serif;
+
+}
 navbar {
     /* background-color: red; */
     display: flex;
@@ -7,6 +11,9 @@ navbar {
 }
 .logo {
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .links {
     display: flex;
@@ -14,6 +21,8 @@ navbar {
     font-size: 20px;
     
 }
-.button {
-    font-size: 20px;
+.active {
+    background-color:#ccc;
+    padding: 0 5px;
+    border-radius: 8px;
 }
