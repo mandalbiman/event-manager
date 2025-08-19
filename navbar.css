@@ -33,3 +33,11 @@ navbar {
 .brand-name {
     padding-bottom: 10px;
 }
+h2 {
+    font-size: 35px;
+    text-wrap-style: bold;
+text-align: center;
+}
+h4 {
+    text-align: center; 
+}
