@@ -12,7 +12,39 @@
 .hero-action{
     h1{
         text-align: center;
-        font-size: 100px;
-        padding: 2px;
+        font-size: 80px; 
+        padding: 40px 4px ;
+
     }
 }
+footer {
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+.brand-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.footer-icons, .legals, .contact-us {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.action-btn{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin: 25px;
+} 

@@ -2,11 +2,15 @@
       font-family: "Inter", sans-serif;
 
 }
+body {
+    margin: 0 10px;
+}
 navbar {
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
-    margin: 25px;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+
     
 }
 .logo {
@@ -25,4 +29,7 @@ navbar {
     background-color:#ccc;
     padding: 4px 8px;
     border-radius: 8px;
+}
+.brand-name {
+    padding-bottom: 10px;
 }
