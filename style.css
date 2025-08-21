@@ -18,6 +18,18 @@
         max-height: 350px;
     }
  }
+ /* .success_page{
+    .name{
+        text-align: center;
+        font-size: 20px;
+    }
+    .photo{
+        background-color: blueviolet;
+        display: block;
+    }
+    background-color: red; */
+    /* padding:40px; */
+ }
 
 .hero-action{
     h1{
@@ -57,16 +69,26 @@ footer {
     border-radius: 5px;
     margin: 25px;
 } 
-h2{
-    text-align: center; 
-    padding-bottom: 300px;
-    padding-left: 100px;
-    padding-top: 200px;
-    /* border-width: 5px;
-    border-style: groove solid; */
-}
+
 
 img {
     padding-left: 900px;
     padding-top: 400px;
+}
+.sucess{
+  .photo{
+    align-items: center;
+    padding-bottom: 50px;
+    padding-right: 700px;
+    padding-left: 200px;
+    padding-top: 300px;
+  }
+  .one{
+    align-items: center;
+    padding-left: 1000px;
+    padding-top: 10px;
+    padding-bottom: 400px;
+    padding-right: 200px;
+    
+  }
 }
