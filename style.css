@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 1080px;
     margin: auto;
 
@@ -11,21 +12,23 @@
 
 .banner {
     margin-bottom: 40px;
+
     img {
         width: 100%;
-        max-width:"100%";
+        max-width: "100%";
         height: auto;
         max-height: 350px;
     }
- }
+}
 
-.hero-action{
-    h1{
+.hero-action {
+    h1 {
         text-align: center;
         font-size: 70px;
         padding: 100px;
     }
 }
+
 footer {
     display: flex;
     margin: 25px;
@@ -33,13 +36,16 @@ footer {
     border-top: 1px solid lightgrey;
 }
 
-.brand-name{
+.brand-name {
     display: flex;
     gap: 10px;
     align-items: center;
-    
+
 }
-.footer-icons, .legals, .contact-us {
+
+.footer-icons,
+.legals,
+.contact-us {
     display: flex;
     gap: 20px;
     margin: 20px;
@@ -47,7 +53,7 @@ footer {
     flex-direction: column;
 }
 
-.action-btn{
+.action-btn {
     width: 250px;
     height: 50px;
     font-size: 20px;
@@ -56,25 +62,78 @@ footer {
     padding-top: 10px;
     border-radius: 5px;
     margin: 25px;
-} 
-h1{
-    text-align: center;
-    font-size: 50px;
 }
-h6 {
-    text-align: center;
+
+.card-list {
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
 }
-h2 {
-    text-align: center;
-}
-.event {
-    height: 400px;
-    width: 200px;
-}
-button {
+.card-action {
     background-color: black;
-    width: 200px ;
+    width: 200px;
     height: 30px;
     text-align: center;
+}
+
+.event {
+    border: 2px solid lightgrey;
+    padding-inline: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    input[type=text],textarea  {
+        width: 400px;
+
+    }
+
+    input, textarea {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+
+.event-button {
     color: white;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 30px;
+    height: 50px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.event-read-terms {
+    padding-bottom: 20px;
+    padding-left: 23px;
+}
+
+.eventcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.heading {
+    padding-top: 70px;
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    h2 {
+        text-align: center;
+    }
+
 }

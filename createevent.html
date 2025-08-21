@@ -38,37 +38,56 @@
             <a><i class="fa-solid fa-circle-plus"></i>Create Event</a>
         </div>
     </navbar>
-
+    <div>
+    <div class="heading">
     <h1>CREATE EVENT</h1>
     <h2>Welcome</h2>
-    <div class="event">Add Your Event 
-       <div id="Event Nmae">
-        <input type="text" name="eventName" id="eventName">
-       </div>
-       <div id="Date & Time"> Date & Time
-        <input type="text" name="date&time" id="date&time">
-       </div>
-       <div id="Address" > Address          
-       <input type="text" name="Address" id="Address"></div>
-       <div id="Event type"> Event Type 
-        <input type="text" name="event type" id="event type">
-       </div>
-       <div id="Event Description">
-        <input type="text" name="event description" id="event description">
-       </div>
-       <input type="radio" > I accept the terms
-        <h6><u>Read our T&Cs</u></h6>
-        <button id="button">Confirm</button>
     </div>
-
-     
+    </div>
+    <div class="container">
+        <div class="eventcontainer">
+            <div class="event">
+                <h3>Add Your Event</h3>
+                <br>
+                <div id="eventname">
+                    <label> Event Name</label>
+                    <div> <input type="text" name="eventName" id="eventName"></div>
+                </div>
+                <div id="date&time">
+                    <label> Date & Time</label>
+                    <div><input type="text" name="date&time" id="date&time"></div>
+                </div>
+                <div id="address">
+                    <label> Address</label>
+                    <div><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+                <div id="eventtype">
+                    <label> Event Type</label>
+                    <div><input type="text" name="event type" id="event type"> </textarea>
+                    </div>
+                </div>
+                <div id="eventdescription">
+                    <label> Event Description</label>
+                    <div>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50"> </textarea>
+                    </div>
+                    <div><input type="checkbox"> I accept the terms</div>
+                    <div>
+                        <h6 class="event-read-terms"><u>Read our T&Cs</u></h6>
+                    </div>
+                    <button class="event-button">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-icons">
             <div class="brand-name">
                 <i class="fa-solid fa-calendar-days"></i>
                 <h3>Event Manager</h3>
-            </div> 
+            </div>
 
             <div class="social-icons">
                 <i class="fa-brands fa-instagram"></i>
