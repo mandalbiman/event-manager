@@ -57,3 +57,16 @@ footer {
     border-radius: 5px;
     margin: 25px;
 } 
+h2{
+    text-align: center; 
+    padding-bottom: 300px;
+    padding-left: 100px;
+    padding-top: 200px;
+    /* border-width: 5px;
+    border-style: groove solid; */
+}
+
+img {
+    padding-left: 900px;
+    padding-top: 400px;
+}
