@@ -39,44 +39,45 @@
         </div>
     </navbar>
     <div>
-    <div class="heading">
-    <h1>CREATE EVENT</h1>
-    <h2>Welcome</h2>
-    </div>
+        <div class="heading">
+            <h1>CREATE EVENT</h1>
+            <h2>Welcome</h2>
+        </div>
     </div>
     <div class="container">
         <div class="eventcontainer">
             <div class="event">
                 <h3>Add Your Event</h3>
                 <br>
-                <div id="eventname">
+                <div>
                     <label> Event Name</label>
                     <div> <input type="text" name="eventName" id="eventName"></div>
                 </div>
-                <div id="date&time">
+                <div>
                     <label> Date & Time</label>
-                    <div><input type="text" name="date&time" id="date&time"></div>
+                    <div><input type="text" name="date_time" id="dateTime"></div>
                 </div>
-                <div id="address">
+                <div>
                     <label> Address</label>
-                    <div><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    <div><textarea id="address" name="address" rows="4" cols="50"></textarea>
                     </div>
                 </div>
-                <div id="eventtype">
+                <div>
                     <label> Event Type</label>
-                    <div><input type="text" name="event type" id="event type"> </textarea>
+                    <div><input type="text" name="event_type" id="eventType"> </textarea>
                     </div>
                 </div>
-                <div id="eventdescription">
+                <div>
                     <label> Event Description</label>
                     <div>
-                        <textarea id="w3review" name="w3review" rows="4" cols="50"> </textarea>
+                        <textarea id="eventDescription" name="event_description" rows="4" cols="50"> </textarea>
                     </div>
                     <div><input type="checkbox"> I accept the terms</div>
                     <div>
                         <h6 class="event-read-terms"><u>Read our T&Cs</u></h6>
                     </div>
-                    <button class="event-button">Confirm</button>
+                    <button class="event-button" onclick="submit()">Confirm</button>
+
                 </div>
             </div>
         </div>
@@ -119,5 +120,6 @@
 
 
 </body>
+<script src="event.js"></script>
 
 </html>
