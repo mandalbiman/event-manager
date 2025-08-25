@@ -4,3 +4,4 @@
 ![](./images/ss/aboutUsPage.png)
 ![](./images/ss/createEventPage.png)
 ![](./images/ss/successPage.png)
+![](./images/ss/listEventsPage.png)
