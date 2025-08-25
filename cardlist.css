@@ -1,3 +1,10 @@
+.card-list {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
 .card{
     display: inline-block; 
     background-color: white;
@@ -7,12 +14,13 @@
     border: 1px solid gray;
     border-radius: 6px; 
     padding: 20px;
+    margin: 10px;
 }
 
 .card-contents {
     display: flex;
     gap: 20px;
-    width: 450px;
+    width: 400px;
     padding: 2px 8px;
 }
 
