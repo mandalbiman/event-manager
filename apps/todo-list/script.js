@@ -45,6 +45,29 @@ Create the addTask function.
 
 */
 
+function addTask() {
+   inputTask = document.getElementById("taskInput");
+   inputTaskValue = inputTask.value; 
+   if (inputTask !== ""){
+      let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+      tasks.append(inputTask);
+      localStorage.setItem("tasks" , JSON.stringify(tasks));
+      inputTaskValue = "";
+      loadTasks();
+   };
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 @Nabin:
 Create a `removeTask(index)` function to delete tasks from `localStorage` and refresh the list.
