@@ -152,6 +152,7 @@ footer {
     padding: 80px 2px;
     display: flex;
     gap: 200px;
+<<<<<<< HEAD
 } 
 .success-content{
     min-height: 80vh;
@@ -162,3 +163,22 @@ footer {
  gap: 40px;
 
 }
+=======
+}
+
+.heading {
+        text-align: left;
+        font-size: large;
+    }
+
+
+.table, th, 
+            td {
+        border: 1px solid #ccc;
+        background-color: ;
+    }
+    .label {
+        text-align: right;
+        font-style: italic;
+    }
+>>>>>>> @{-1}
