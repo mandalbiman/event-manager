@@ -14,6 +14,20 @@
 6. Ensure this function is called every time the page loads.
 
 */
+$(document).ready(loadTasks);
+
+ function loadTasks() {
+   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+   $('#taskList').empty();
+   tasks.forEach((task, index) => {
+      $('#taskList').append(`<div class = "task-card">${task}
+         <button onclick = "removeTask(index)">delete</button>
+         </div>
+         `);
+      
+   });
+   
+ }
 
 /*
 @Czar
