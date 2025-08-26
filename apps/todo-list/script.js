@@ -78,3 +78,10 @@ Create a `removeTask(index)` function to delete tasks from `localStorage` and re
 5. Call loadTasks() to rebuild the task list in the page so the removal is immediately visible.
 
 */
+
+function removeTask(index){
+   const tasklist = JSON.parse(localStorage.getItem("task")) || [];
+   tasklist.splice(index, 1);
+   localStorage.setItem('task', JSON.stringify("tasklist"));
+   loadtasks();
+}
