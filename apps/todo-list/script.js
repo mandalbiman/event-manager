@@ -16,18 +16,19 @@
 */
 $(document).ready(loadTasks);
 
- function loadTasks() {
+
+function loadTasks() {
    const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
    $('#taskList').empty();
    tasks.forEach((task, index) => {
-      $('#taskList').append(`<div class = "task-card">${task}
-         <button onclick = "removeTask(index)">delete</button>
+      $('#taskList').append(`
+         <div class = "task-card">
+            ${task}<button onclick = "removeTask(${index})">delete</button>
          </div>
-         `);
-      
+      `);
    });
-   
- }
+
+}
 
 /*
 @Czar
