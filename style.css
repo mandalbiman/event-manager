@@ -19,16 +19,12 @@
         height: auto;
         max-height: 350px;
     }
-<<<<<<< HEAD
 }
 
-.hero-action {
-    h1 {
-=======
- }
+
 .hero-action{
     h1{
->>>>>>> @{-1}
+
         text-align: center;
         font-size: 70px;
         padding: 100px;
@@ -68,7 +64,6 @@ footer {
     padding-top: 10px;
     border-radius: 5px;
     margin: 25px;
-<<<<<<< HEAD
 
 }
 
@@ -122,6 +117,10 @@ footer {
     width: 400px;
     border-radius: 4px;
     cursor: pointer;
+    a {
+        color: white;
+        text-decoration-line: none;
+    }
 }
 
 .event-read-terms {
@@ -153,7 +152,6 @@ footer {
     padding: 80px 2px;
     display: flex;
     gap: 200px;
-=======
 } 
 .success-content{
     min-height: 80vh;
@@ -162,5 +160,5 @@ footer {
  justify-content: center;
  align-items: center;
  gap: 40px;
->>>>>>> @{-1}
+
 }
