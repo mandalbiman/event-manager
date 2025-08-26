@@ -45,14 +45,14 @@ Create the addTask function.
 
 */
 
-function addTask() {
-   inputTask = document.getElementById("taskInput");
-   inputTaskValue = inputTask.value; 
+function addTasks() {
+   inputTask = $("#taskInput").val();
    if (inputTask !== ""){
       let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-      tasks.append(inputTask);
+      console.log(tasks)
+      tasks.push(inputTask);
       localStorage.setItem("tasks" , JSON.stringify(tasks));
-      inputTaskValue = "";
+      $("#taskInput").val('');
       loadTasks();
    };
 }
