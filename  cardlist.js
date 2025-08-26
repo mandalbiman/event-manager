@@ -1,5 +1,4 @@
-const sampleData = function() {
-    return `[
+const sampleData =  [
         { 
             "title": "ICC World Cup",
             "date": "15th August 2027",
@@ -50,8 +49,7 @@ const sampleData = function() {
             "date": "28th May 2028",
             "description": "Indian Premier League Final"
         }
-    ]`;
-}
+    ]
 
 
 
@@ -76,9 +74,9 @@ window.onload = function () {
     cardListEle.innerHTML = ""
     let cardList = localStorage.getItem('card-list')
     if (cardList === null || cardList.length === 0){
-        cardList = sampleData();
+        cardList = sampleData;
     }
-    for (let card of JSON.parse(cardList)){
+    for (let card of cardList){
         cardListEle.innerHTML += getCard(card['title'], card['date'], card['description'])
     }
 }
