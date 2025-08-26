@@ -80,8 +80,8 @@ Create a `removeTask(index)` function to delete tasks from `localStorage` and re
 */
 
 function removeTask(index){
-   const tasklist = JSON.parse(localStorage.getItem("task")) || [];
+   const tasklist = JSON.parse(localStorage.getItem("tasks")) || [];
    tasklist.splice(index, 1);
-   localStorage.setItem('task', JSON.stringify("tasklist"));
-   loadtasks();
+   localStorage.setItem('tasks', JSON.stringify(tasklist));
+   loadTasks();
 }
