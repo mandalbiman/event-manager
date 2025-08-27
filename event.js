@@ -1,22 +1,19 @@
+
 function submit() {
-    let inputElement = document.getElementById("eventName");
-    let rec = inputElement.value;
-    let dateTimeElement = document.getElementById("dateTime");
-    let dateTime = dateTimeElement.value;
-    let addressElement = document.getElementById("address");
-    let address = addressElement.value;
-    let eventTypeElement = document.getElementById("eventType");
-    let eventType = eventTypeElement.value;
-    let eventDescriptionElement = document.getElementById("eventDescription");
-    let eventDescription = eventDescriptionElement.value;
+    let eventName = $('#eventName').val();
+    let dateTime = $('#dateTime').val();
+    let address = $('#address').val();
+    let eventType = $('#eventType').val();
+    let eventDescription = $('#eventDescription').val();
     let data = {
-        "eventName": rec,
+        "eventName": eventName,
         "dateTime" : dateTime,
         "address" : address,
         "eventType" :eventType,
         "eventDescription" : eventDescription
     }
-    let dataAsString = JSON.stringify(data);    
-    alert(dataAsString);
-    localStorage.setItem("data",dataAsString);
+    let events = JSON.parse(localStorage.getItem("events")) || [];
+    console.log(event);
+    events.push(data);
+    localStorage.setItem("events",JSON.stringify(events));
 }
