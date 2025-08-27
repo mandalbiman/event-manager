@@ -152,7 +152,7 @@ footer {
     padding: 80px 2px;
     display: flex;
     gap: 200px;
-<<<<<<< HEAD
+
 } 
 .success-content{
     min-height: 80vh;
@@ -162,8 +162,6 @@ footer {
  align-items: center;
  gap: 40px;
 
-}
-=======
 }
 
 .heading {
@@ -175,10 +173,9 @@ footer {
 .table, th, 
             td {
         border: 1px solid #ccc;
-        background-color: ;
+    
     }
     .label {
         text-align: right;
         font-style: italic;
     }
->>>>>>> @{-1}
