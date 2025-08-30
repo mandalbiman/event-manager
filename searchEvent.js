@@ -36,7 +36,7 @@ function filterTable(){
         const dateTime = parseDate(evnt['dateTime']);
         console.log(dateTime); 
         const now = new Date();
-        if (selectedOption)
+        if 
     })
 }
 
