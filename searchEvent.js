@@ -1,4 +1,3 @@
-function filterTable(){
     /*
     1. Get the data
     2. Get the selectedOption
@@ -11,24 +10,33 @@ function filterTable(){
     9. use onchange in html/js
     */
 
-    var selectedOption = document.getElementById("select").value;
-    var tableRows = document.getElementById("table").getElementsByTagName("tr");
+$(document).ready(filterTable);
 
-    for (var i = 1; i<tableRows.length; i++){
-        var tableData = tableRows[i].getElementsByTagName("td");
-        var hideRow = true;
-
-        if (selectedOption === "all"){
-            hideRow = false;
-        }else if (tableData[1].innerHTML === selectedOption){
-            hideRow = false
-        }
-        if (hideRow){
-            tableRows[i].style.display = "none";
-        }else{
-            tableRows[i].style.display = "";
-        }
-    }
+function parseDate(dateStr) {
+    const defaultDate = new Date(1972,2,1);
+    if (!dateStr) return defaultDate;
+    if (dateStr.trim() === "") return defaultDate;
+    const dateParts = dateStr.split("/");
+    if (dateParts.length != 3) return defaultDate;
+    const inputDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+    if (isNaN(inputDate.getTime())) return defaultDate;
+    return inputDate;
 }
 
-document.getElementById("select").addEventListener("change" , filterTable);
+function filterTable(){
+    const events = JSON.parse(localStorage.getItem("events")) || [];
+    
+    let selectedOption = $('#select').val();
+    console.log(selectedOption);
+    let tableBody = $('#listing');
+
+    $('#listing').empty();
+    events.filter(function(evnt){
+        console.log(evnt);
+        const dateTime = parseDate(evnt['dateTime']);
+        console.log(dateTime); 
+        const now = new Date();
+        if (selectedOption)
+    })
+}
+

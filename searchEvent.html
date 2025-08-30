@@ -1,153 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVENT MANEGMENT</title>
-    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="cardlist.css">
-    <link rel="s" 
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cardlist.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <navbar>
-        <div class="logo">
-            <a class="icon"><i class="fa-solid fa-calendar-days"></i></a>
-            <a class="brand-name"><b>Event Manager</b></a>
-        </div>
-        <div class="links">
-            <a href="/"><i class="fa-solid fa-house"></i><b>Home</b></a>
-            <a href="/about.html">About Us</a>
-            <a class="active" href="/searchEvent.html"><i class="fa-solid fa-magnifying-glass"></i>Search Event</a>
-            <a href="/createevent.html"><i class="fa-solid fa-circle-plus"></i>Create Event</a> 
-        </div>
+      <div class="logo">
+        <a class="icon"><i class="fa-solid fa-calendar-days"></i></a>
+        <a class="brand-name"><b>Event Manager</b></a>
+      </div>
+      <div class="links">
+        <a href="/"><i class="fa-solid fa-house"></i><b>Home</b></a>
+        <a href="/about.html">About Us</a>
+        <a class="active" href="/searchEvent.html"
+          ><i class="fa-solid fa-magnifying-glass"></i>Search Event</a
+        >
+        <a href="/createevent.html"
+          ><i class="fa-solid fa-circle-plus"></i>Create Event</a
+        >
+      </div>
     </navbar>
     <section class="banner">
-        <img src="event_manager.png">
+      <img src="event_manager.png" />
     </section>
     <div class="container">
-        <h1 style="text-align: center;"><u>Events</u></h1>
-        <div class="dropdown">
-            <select name="select" id="select">
-                <option value="Future Dates">Upcomming Events</option>
-                <option value="Past Dates">Past Events</option>
-            </select>
-        </div>
+      <h1 style="text-align: center"><u>Events</u></h1>
+      <select name="select" id="select" onchange="filterTable()">
+          <option value="future">Upcomming Events</option>
+          <option value="past">Past Events</option>
+        </select>
+      <div class="dropdown">
+        
+      </div>
 
-        <table border="n" style="width:100%; text-align:center; border-collapse:collapse;">
-            <tr>
-                <th>Events</th>
-                <th>Date</th>
-                <th>Address</th>
-            </tr>
-
-            <tr>
-                <td>Independence Day</td>
-                <td>15th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>16th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>17th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>18th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>19th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>20th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>21st August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>22nd August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>23rd August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>24th August</td>
-                <td>Mathurapur</td>
-            </tr>
-            <tr>
-                <td>Independence Day</td>
-                <td>25th August</td>
-                <td>Mathurapur</td>
-            </tr>
-        </table>
+      <table
+        border="n"
+        id="listing"
+        style="width: 100%; text-align: center; border-collapse: collapse"
+      >
+        <thead>
+          <tr>
+            <th>Events</th>
+            <th>Date</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>15th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>16th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>17th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>18th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>19th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>20th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>21st August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>22nd August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>23rd August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>24th August</td>
+            <td>Mathurapur</td>
+          </tr>
+          <tr>
+            <th scope="row">Independence Day</th>
+            <td>25th August</td>
+            <td>Mathurapur</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-
     <footer>
-        <div class="footer-icons">
-            <div class="brand-name">
-                <i class="fa-solid fa-calendar-days"></i>
-                <h3>Event Manager</h3>
-            </div>
-            <div class="social-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
+      <div class="footer-icons">
+        <div class="brand-name">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>Event Manager</h3>
+        </div>
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="legals">
+        <h3>Legals</h3>
 
-        </div>
-        <div class="legals">
-            <h3>Legals</h3>
-
-            <a>Privacy</a>
-            <a>Terms & Conditions</a>
-            <a>Licence</a>
-            <a>Write with us</a>
-        </div>
-        <div class="contact-us">
-            <h3>Contact US</h3>
-            <a>WP 760622059</a>
-            <a>10128795206/12595206184</a>
-
-        </div>
-        <div class="action-btns">
-            <div class="action-btn">Join With Us</div>
-            <div class="action-btn">Join With Us</div>
-        </div>
+        <a>Privacy</a>
+        <a>Terms & Conditions</a>
+        <a>Licence</a>
+        <a>Write with us</a>
+      </div>
+      <div class="contact-us">
+        <h3>Contact US</h3>
+        <a>WP 760622059</a>
+        <a>10128795206/12595206184</a>
+      </div>
+      <div class="action-btns">
+        <div class="action-btn">Join With Us</div>
+        <div class="action-btn">Join With Us</div>
+      </div>
     </footer>
-</body>
-
+    <script src="./searchEvent.js"></script>
+  </body>
 </html>
