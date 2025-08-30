@@ -50,8 +50,8 @@ function submit() {
     let eventDescription = $('#eventDescription').val();
     if (!validEventDescription(eventDescription)){
         console.log(validEventDescription(eventDescription));
-        $('#eventDescriptionErr').show();
-        $('#eventDescriptionErr').text('Invalid EventDescription . EventDescription should be Alphabetical and length should be greater than 15');
+        $('#event_descriptionErr').show();
+        $('#event_descriptionErr').text('Invalid EventDescription . EventDescription should be Alphabetical and length should be greater than 15');
         return;
     }
     else {
