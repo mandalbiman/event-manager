@@ -1,14 +1,14 @@
-/*
-1. Get the data
-2. Get the selectedOption
-3. Select table body
-4. Empty Table body
-5. filter the events based on selectedOption
-6. For each element in event generate the tr tag
-7. append the tr tag to table body
-8. use document.ready
-9. use onchange in html/js
-*/
+    /*
+    1. Get the data
+    2. Get the selectedOption
+    3. Select table body
+    4. Empty Table body
+    5. filter the events based on selectedOption
+    6. For each element in event generate the tr tag
+    7. append the tr tag to table body
+    8. use document.ready
+    9. use onchange in html/js
+    */
 
 $(document).ready(filterTable);
 
