@@ -13,7 +13,7 @@
 $(document).ready(filterTable);
 
 function parseDate(dateStr) {
-    const defaultDate = new Date(1972,2,1);
+    const defaultDate = new Date(1972, 2, 1);
     if (!dateStr) return defaultDate;
     if (dateStr.trim() === "") return defaultDate;
     const dateParts = dateStr.split("/");
@@ -23,20 +23,38 @@ function parseDate(dateStr) {
     return inputDate;
 }
 
-function filterTable(){
+function filterTable() {
     const events = JSON.parse(localStorage.getItem("events")) || [];
-    
+
     let selectedOption = $('#select').val();
     console.log(selectedOption);
     let tableBody = $('#listing');
 
     $('#listing').empty();
-    events.filter(function(evnt){
-        console.log(evnt);
+
+        let eventsFilter = events.filter((evnt) => {
         const dateTime = parseDate(evnt['dateTime']);
-        console.log(dateTime); 
+        console.log(dateTime);
         const now = new Date();
-        if 
+        console.log(selectedOption);
+        if (selectedOption === "future") {
+            if (dateTime >= now) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (dateTime < now) {
+                return true;
+            } else {
+                return false;
+            };
+        };
+    });
+
+    eventsFilter.forEach(items=> {
+        
     })
-}
+} 
+
 
