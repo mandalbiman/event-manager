@@ -22,12 +22,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="cardlist.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
 
   <body>
@@ -53,12 +55,10 @@
     <div class="container">
       <h1 style="text-align: center"><u>Events</u></h1>
       <select name="select" id="select" onchange="filterTable()">
-          <option value="future">Upcomming Events</option>
-          <option value="past">Past Events</option>
-        </select>
-      <div class="dropdown">
-        
-      </div>
+        <option value="future">Upcomming Events</option>
+        <option value="past">Past Events</option>
+      </select>
+      <div class="dropdown"></div>
 
       <table
         border="n"

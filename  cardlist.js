@@ -45,3 +45,30 @@ function loadEvents() {
 
 
 }
+
+/*
+ 1. parsing date-time
+ 2. set default date-time
+ 3. if (!dateStr) return defaultDate;
+    if (dateStr.trim() === "") return defaultDate;
+    const dateParts = dateStr.split("/");
+    if (dateParts.length != 3) return defaultDate;
+    const inputDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+    if (isNaN(inputDate.getTime())) return defaultDate;
+    return inputDate
+  4. filter the events based on date-time
+  5. forEach event in events get name, date & description
+  6. append cardlist tag to eventcard    
+*/
+
+
+
+
+
+
+
+
+
+
+
+

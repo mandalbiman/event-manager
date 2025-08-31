@@ -1,14 +1,14 @@
-    /*
-    1. Get the data
-    2. Get the selectedOption
-    3. Select table body
-    4. Empty Table body
-    5. filter the events based on selectedOption
-    6. For each element in event generate the tr tag
-    7. append the tr tag to table body
-    8. use document.ready
-    9. use onchange in html/js
-    */
+/*
+1. Get the data
+2. Get the selectedOption
+3. Select table body
+4. Empty Table body
+5. filter the events based on selectedOption
+6. For each element in event generate the tr tag
+7. append the tr tag to table body
+8. use document.ready
+9. use onchange in html/js
+*/
 
 $(document).ready(filterTable);
 
@@ -28,11 +28,7 @@ function filterTable() {
 
     let selectedOption = $('#select').val();
     console.log(selectedOption);
-    let tableBody = $('#listing');
-
-    $('#listing').empty();
-
-        let eventsFilter = events.filter((evnt) => {
+    let eventsFilter = events.filter((evnt) => {
         const dateTime = parseDate(evnt['dateTime']);
         console.log(dateTime);
         const now = new Date();
@@ -52,9 +48,23 @@ function filterTable() {
         };
     });
 
-    eventsFilter.forEach(items=> {
-        
+    $('tbody').empty();
+
+    eventsFilter.forEach(item => {
+        const eventsName = item['eventName'];
+        const eventsDate = item['dateTime'];
+        const eventAddress = item['address'];
+
+
+        const tableRow = `
+        <tr>
+            <th scope="row">${eventsName}</th>
+            <td>${eventsDate}</td>
+            <td>${eventAddress}</td>
+        </tr>
+        `;
+        $('tbody').append(tableRow);
     })
-} 
+}
 
 
