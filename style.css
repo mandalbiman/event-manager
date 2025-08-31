@@ -197,20 +197,37 @@ td {
     display: inline-block;
     max-width: 400px;
 }
-.table, th, 
-            td {
-        border: 1px solid #ccc;
-    
-    }
-    .label {
-        text-align: right;
-        font-style: italic;
-    }
-.checkout{
+
+.table,
+th,
+td {
+    border: 1px solid #ccc;
+
+}
+
+.label {
+    text-align: right;
+    font-style: italic;
+}
+
+.checkout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom:40vh;
+    margin-bottom: 40vh;
     font-size: large;
+}
+
+.heading {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 1290px;
+    height: 300px;
 }
