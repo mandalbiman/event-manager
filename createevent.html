@@ -53,36 +53,36 @@
                 <br>
                 <div class="input-element">
                     <label> Event Name</label>
-                    <div> <input type="text" name="eventName" id="eventName"></div>
+                    <div> <input type="text" name="eventName" id="eventName" onchange="onChangeEventName()"></div>
                     <span class="error-msg" id="eventNameErr"></span>
                 </div>
                 <div class="input-element">
                     <label> Date & Time</label>
-                    <div><input type="text" name="date_time" id="dateTime"></div>
+                    <div><input type="text" name="date_time" id="dateTime" onchange="dateTimeChange()"></div>
                     <span class="error-msg" id="dateTimeErr"></span>
                 </div>
                 <div class="input-element">
                     <label> Address</label>
-                    <div><textarea id="address" name="address" rows="4" cols="50"></textarea></div>
+                    <div><textarea id="address" name="address" rows="4" cols="50" onchange="addressChange"></textarea></div>
                        <span class="error-msg" id="addressErr"></span>
                 </div>
                 <div class="input-element">
                     <label> Event Type</label>
-                    <div><input type="text" name="event_type" id="eventType"> </textarea></div>
+                    <div><input type="text" name="event_type" id="eventType" onchange="eventtypeChange"> </textarea></div>
                     <span class="error-msg" id="eventTypeErr"></span>
                 </div>
                 <div class="input-element">
                     <label> Event Description</label>
-                    <div> <textarea id="eventDescription" name="event_description" rows="4" cols="50"> </textarea></div>
+                    <div> <textarea id="eventDescription" name="event_description" rows="4" cols="50" onchange="eventdescriptionChange"> </textarea></div>
                     <span class="error-msg" id="event_descriptionErr"></span>
                 </div>
                 <div class="input-element">
-                    <input type="checkbox"> I accept the terms
+                    <input type="checkbox" onchange="acceptTerms()" id="terms"> I accept the terms & conditions
                 </div>
                 <div class="input-element">
                     <h6 class="event-read-terms"><u>Read our T&Cs</u></h6>
                 </div>
-                <button class="event-button" onclick="submit()">Confirm</button>
+                <button class="event-button" id="submitBtn" disabled onclick="submit()">Confirm</button>
 
             </div>
         </div>

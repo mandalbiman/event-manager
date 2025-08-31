@@ -120,6 +120,10 @@ footer {
     border-radius: 4px;
     cursor: pointer;
 
+    &:disabled {
+        background-color: gray;
+    }
+
     a {
         color: white;
         text-decoration-line: none;
