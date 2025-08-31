@@ -220,14 +220,14 @@ td {
 }
 
 .heading {
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 img {
     width: 1290px;
-    height: 300px;
+    height: 350px;
 }
