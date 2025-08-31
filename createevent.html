@@ -19,9 +19,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./navbar.css/banner.css/card-list.css/hero-action.css/footer.css" />
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="cardlist.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -31,42 +34,69 @@
             <a class="brand-name"><b>Event Manager</b></a>
         </div>
         <div class="links">
-            <a class="active"><i class="fa-solid fa-house"></i><b>Home</b></a>
+            <a href="/"><i class="fa-solid fa-house"></i><b>Home</b></a>
             <a href="/about.html">About Us</a>
             <a href="/searchEvent.html"><i class="fa-solid fa-magnifying-glass"></i>Search Event</a>
-            <a href="/createevent.html"> <i class="fa-solid fa-circle-plus"></i>Create Event</a>
+            <a class="active" href="/createevent.html"><i class="fa-solid fa-circle-plus"></i>Create Event</a>
         </div>
     </navbar>
-    <section class="banner">
-        <img src="event_manager.png">
-    </section>
-    <div class="container">
-        <section class="card-list" id="card-list">
-            <div class="card">
-                <div class="card-contents">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </div>
-                    <div class="card-section">
-                        <h1>Title</h1>
-                        <h2>15th August 2025</h2>
-                        <p>Independence Day Event @ Mathurapur BSS High School </p> <br>
-                        <button class="card-action"> Read More</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="hero-action">
-            <h1>Cherish Your Moment!!!</h1>
-        </section>
+    <div>
+        <div class="heading">
+            <img src="Well-come.png">
+            <!-- <h1>CREATE EVENT</h1>
+            <h2>Welcome</h2> -->
+        </div>
     </div>
+    <div class="container">
+        <div class="eventcontainer">
+            <div class="event">
+                <h3>Add Your Event</h3>
+                <br>
+                <div class="input-element">
+                    <label> Event Name</label>
+                    <div> <input type="text" name="eventName" id="eventName"></div>
+                    <span class="error-msg" id="eventNameErr"></span>
+                </div>
+                <div class="input-element">
+                    <label> Date & Time</label>
+                    <div><input type="text" name="date_time" id="dateTime"></div>
+                    <span class="error-msg" id="dateTimeErr"></span>
+                </div>
+                <div class="input-element">
+                    <label> Address</label>
+                    <div><textarea id="address" name="address" rows="4" cols="50"></textarea></div>
+                       <span class="error-msg" id="addressErr"></span>
+                </div>
+                <div class="input-element">
+                    <label> Event Type</label>
+                    <div><input type="text" name="event_type" id="eventType"> </textarea></div>
+                    <span class="error-msg" id="eventTypeErr"></span>
+                </div>
+                <div class="input-element">
+                    <label> Event Description</label>
+                    <div> <textarea id="eventDescription" name="event_description" rows="4" cols="50"> </textarea></div>
+                    <span class="error-msg" id="event_descriptionErr"></span>
+                </div>
+                <div class="input-element">
+                    <input type="checkbox"> I accept the terms
+                </div>
+                <div class="input-element">
+                    <h6 class="event-read-terms"><u>Read our T&Cs</u></h6>
+                </div>
+                <button class="event-button" onclick="submit()">Confirm</button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
     <footer>
         <div class="footer-icons">
             <div class="brand-name">
                 <i class="fa-solid fa-calendar-days"></i>
                 <h3>Event Manager</h3>
             </div>
+
             <div class="social-icons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-x-twitter"></i>
@@ -94,8 +124,9 @@
             <div class="action-btn">Join With Us</div>
         </div>
     </footer>
-    <script src="./ cardlist.js"></script>
+
 
 </body>
+<script src="event.js"></script>
 
 </html>

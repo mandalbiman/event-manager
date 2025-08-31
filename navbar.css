@@ -9,7 +9,7 @@ navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(142, 102, 102);
 
     
 }
@@ -23,7 +23,10 @@ navbar {
     display: flex;
     gap: 25px;
     font-size: 20px;
-    
+    a {
+    text-decoration-line: none;
+    color: black;
+    }
 }
 .active {
     background-color:#ccc;
@@ -32,4 +35,12 @@ navbar {
 }
 .brand-name {
     padding-bottom: 10px;
+}
+h2 {
+    font-size: 35px;
+    text-wrap-style: bold;
+text-align: center;
+}
+h4 {
+    text-align: center; 
 }

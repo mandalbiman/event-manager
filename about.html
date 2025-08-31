@@ -10,18 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./navbar.css/banner.css/card-list.css/hero-action.css/footer.css" />
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="cardlist.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -31,35 +27,47 @@
             <a class="brand-name"><b>Event Manager</b></a>
         </div>
         <div class="links">
-            <a class="active"><i class="fa-solid fa-house"></i><b>Home</b></a>
-            <a href="/about.html">About Us</a>
+            <a href="/"><i class="fa-solid fa-house"></i><b>Home</b></a>
+            <a class="active" href="/about.html">About Us</a>
             <a href="/searchEvent.html"><i class="fa-solid fa-magnifying-glass"></i>Search Event</a>
-            <a href="/createevent.html"> <i class="fa-solid fa-circle-plus"></i>Create Event</a>
+            <a href="/createevent.html"><i class="fa-solid fa-circle-plus"></i>Create Event</a>
         </div>
     </navbar>
     <section class="banner">
-        <img src="event_manager.png">
+        <img src="event_manager.png" height="123">
     </section>
     <div class="container">
-        <section class="card-list" id="card-list">
-            <div class="card">
-                <div class="card-contents">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </div>
-                    <div class="card-section">
-                        <h1>Title</h1>
-                        <h2>15th August 2025</h2>
-                        <p>Independence Day Event @ Mathurapur BSS High School </p> <br>
-                        <button class="card-action"> Read More</button>
-                    </div>
-                </div>
-            </div>
+        <div class="about-us">
+            <h2><u>About Us</u></h2>
+        </div>
 
-        </section>
-        <section class="hero-action">
-            <h1>Cherish Your Moment!!!</h1>
-        </section>
+        <div class="about-us-contents">
+            <div class="portfolio">
+                <img src="images/ss/porfolio.webp" alt="portfolio-image" width="400px" height="500px">
+            </div>
+            <div class="description">
+                <p>
+                    At Event Management, we believe every event is more than just a gathering—it’s a story waiting to be
+                    told. Our mission is to transform your vision into unforgettable experiences, filled with
+                    creativity,
+                    precision, and a touch of magic.<br>
+                    From intimate celebrations to grand corporate events, we specialize in planning, designing, and
+                    executing seamless occasions that reflect your personality, style, and goals.<br>
+                    With a passionate team of event enthusiasts, we focus on:<br>
+                    <li><b>Creative Concepts</b>– Innovative themes, décor, and experiences that wow your guests.</li>
+                    <li><b>Flawless Execution</b>- Timely coordination and professional management from start to finish.
+                    </li>
+                    <li><b>Personalized Planning</b>- Every event is unique, so we tailor every detail to your needs.
+                    </li>
+                    <br>
+                    Whether it’s a wedding, corporate function, birthday, concert, or cultural fest, we go beyond just
+                    organizing—we create memories that last a lifetime.
+                    <br>
+                    At Event Management, your dream event is our responsibility. Relax, enjoy, and leave the rest to
+                    us..
+                </p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer-icons">
@@ -94,8 +102,6 @@
             <div class="action-btn">Join With Us</div>
         </div>
     </footer>
-    <script src="./ cardlist.js"></script>
-
 </body>
 
 </html>
