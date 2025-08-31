@@ -55,7 +55,6 @@ function filterTable() {
         const eventsDate = item['dateTime'];
         const eventAddress = item['address'];
 
-
         const tableRow = `
         <tr>
             <th scope="row">${eventsName}</th>
