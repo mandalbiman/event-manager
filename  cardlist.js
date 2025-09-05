@@ -1,4 +1,4 @@
-$(document).ready(loadEvents)
+$(document).ready(filterCard)
 
 function loadEvents() {
     // 1. Read the events from local storage with key events
@@ -74,39 +74,51 @@ function parseDate(dateStr) {
 
 function filterCard() {
 
-    const indexDateTime = dateTime.filter((dateTime, index) => {
-        return index >= dateTime[4];
-    });
-    console.log(indexDateTime);
+    const events = JSON.parse(localStorage.getItem("events")) || [];
+    $('#card-list').empty();
 
-    eventsObject.forEach(event => {
-        console.log(event);
-        const eventName = event['eventName'];
-        const eventdate = event['dateTime'];
-        const description = event['eventDescription'];
-        console.log(eventName);
-        console.log(eventdate);
-        console.log(description);
+    let filterEvents = events.filter((item) => {
+        const dateTime = parseDate(item['dateTime']);
+        const now = new Date();
+        console.log(dateTime);
+        console.log(now);
+        console.log(now <= dateTime)
+        return now <= dateTime
+    }).slice(0,5);
 
-        const eventCard = ` 
-        <div class="card">
+    console.log(`Filered events length ${filterEvents.length}`)
+
+    if (filterEvents == undefined || filterEvents.length === 0) {
+        $('#card-list').append(`<h3>No Upcomming events</h3>`);
+    } else {
+        filterEvents.forEach(event => {
+            const title = event['eventName'];
+            const datetime = event['dateTime'];
+            const description = event['eventDescription'];
+            let card = `
+            <div class="card">
                 <div class="card-contents">
                     <div class="card-icon">
                         <i class="fa-solid fa-circle-info"></i>
                     </div>
                     <div class="card-section">
-                        <h1>${eventName}</h1>
-                        <h2>${eventdate}</h2>
+                        <h1>${title}</h1>
+                        <h2>${datetime}</h2>
                         <p>${description}</p> <br>
                         <button class="card-action"> Read More</button>
                     </div>
                 </div>
             </div>
-        `
+            `;
+            $('#card-list').append(card);
+        })
+    }
 
-        $('#card-list').append(eventCard);
-    });
 }
+
+
+
+
 
 
 

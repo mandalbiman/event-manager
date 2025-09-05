@@ -53,7 +53,19 @@ function filterTable() {
     });
 
     eventsFilter.forEach(items => {
-
+        const event = items['eventName'];
+        const datetime = items['dateTime'];
+        const address = items['address'];
+        let tables = `
+            <thead>
+          <tr>
+            <th>${event}</th>
+            <th>${datetime}</th>
+            <th>${address}</th>
+          </tr>
+        </thead>
+            `;
+        $('#listing').append(tables);
     })
 }
 
